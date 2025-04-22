@@ -35,6 +35,12 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
 .header {
   background-image: url(../img/header/main-bg.png);
   height: 904px;
@@ -168,13 +174,95 @@ h1 {
 }
 
 /*=================Donate===================*/
+.donate {
+  max-width: 1440px;
+  height: 1480px;
+  background-color: #EFF2F2;
+  padding: 80px 185px;
+}
+
+.donate h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.donate h2 span {
+  color: #13ADB7;
+}
+
+.donate__search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.donate__search {
+  width: 800px;
+  height: 64px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #eee;
+  border-radius: 60px;
+  margin-bottom: 25px;
+  transition: border-color 0.3s;
+}
+
+.donate__search::placeholder {
+  color: #9EA1B4;
+  font-size: 18px;
+}
+
+.donate__search:focus {
+  outline: none;
+  border-color: #13ADB7;
+}
+
+.donate__category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 64px;
+}
+
+.donate__category button {
+  height: 38px;
+  padding: 6px 16px;
+  background-color: #f1f1f1;
+  border: 1px solid #13ADB7;
+  border-radius: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.donate__category button:hover {
+  background-color: #13ADB7;
+  color: white;
+}
+
+.donate__category button.active {
+  background-color: #13ADB7;
+  color: white;
+}
+
 .donate__card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
 }
 
+@media (max-width: 1024px) {
+  .donate__card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .donate__card-list {
+    grid-template-columns: 1fr;
+  }
+}
 .donate__card {
   background-color: #fff;
   border-radius: 16px;
