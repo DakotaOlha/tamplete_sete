@@ -1,0 +1,236 @@
+.app-section {
+  max-width: 1440px;
+  background-color: #EFF2F2;
+  padding: 0px 185px 80px 185px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding-top: 77px;
+}
+
+.app-mockup {
+  width: 334px;
+  color: #000;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+.projects {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.project {
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 1;
+  font-size: 12px;
+  text-align: center;
+}
+
+.open-data h3 {
+  margin-top: 0;
+}
+
+.chart-placeholder {
+  height: 100px;
+  background: linear-gradient(to right, #00f, #0ff, #0f0);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.donation {
+  font-size: 14px;
+}
+
+.donation-amount {
+  color: green;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.app-info {
+  max-width: 585px;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 12px 0;
+  max-width: 666px;
+}
+
+.title .highlight {
+  color: #13ADB7;
+}
+
+.description {
+  max-width: 480px;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0 0 21px 0;
+  color: #5C6574;
+  line-height: 1.75;
+  font-family: "DM Sans";
+}
+
+.read-more {
+  font-weight: 400;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: underline;
+}
+
+.faq {
+  margin-top: 76px;
+}
+
+.faq h5 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.faq-item {
+  background: #1a1a1a;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faqAccordion {
+  height: 63px;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 0;
+}
+
+.accordion-collapse {
+  height: 40px;
+  padding: 0;
+  justify-self: start;
+  align-content: end;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #F9FAFC;
+  color: #000;
+}
+
+.accordion-button:focus {
+  border: 0;
+  box-shadow: none;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media (max-width: 1200px) {
+  .app-section {
+    padding: 0 100px 60px 100px;
+  }
+
+  .app-container {
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-section {
+    padding: 0 40px 50px 40px;
+  }
+
+  .app-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .app-mockup {
+    width: 280px;
+  }
+
+  .app-info {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description,
+  .read-more {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-section {
+    padding: 0 20px 40px 20px;
+  }
+
+  .app-mockup {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description,
+  .read-more {
+    font-size: 15px;
+  }
+
+  .faq h5 {
+    font-size: 18px;
+  }
+}
