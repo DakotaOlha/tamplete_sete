@@ -405,99 +405,42 @@
     font-size: 0.9rem;
   }
 }
-.app-section {
+.app {
   max-width: 1440px;
   background-color: #EFF2F2;
   padding: 0px 185px 80px 185px;
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-.app-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 60px;
-  flex-wrap: wrap;
-  padding-top: 77px;
-}
-
-.app-mockup {
-  width: 334px;
-  color: #000;
-}
-
-.app-header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.menu-icon {
-  font-size: 24px;
-}
-
-.projects {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.project {
-  background-color: #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  flex: 1;
-  font-size: 12px;
-  text-align: center;
-}
-
-.open-data h3 {
-  margin-top: 0;
-}
-
-.chart-placeholder {
-  height: 100px;
-  background: linear-gradient(to right, #00f, #0ff, #0f0);
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
-.donation {
-  font-size: 14px;
-}
-
-.donation-amount {
-  color: green;
-  font-weight: bold;
-  margin-left: 5px;
-}
-
-.app-info {
-  max-width: 585px;
-  width: 100%;
-}
-
-.subtitle {
+.app__subtitle {
   font-size: 14px;
   font-weight: 500;
   color: #aaa;
   text-transform: uppercase;
   margin: 0;
 }
-
-.title {
+.app__title {
   font-size: 32px;
   font-weight: 700;
   margin: 12px 0;
   max-width: 666px;
 }
-
-.title .highlight {
-  color: #13ADB7;
+.app__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding-top: 77px;
 }
-
-.description {
+.app__container-mockup {
+  width: 334px;
+  color: #000;
+}
+.app__info {
+  max-width: 585px;
+  width: 100%;
+}
+.app__info-description {
   max-width: 480px;
   font-weight: 400;
   font-size: 18px;
@@ -506,45 +449,34 @@
   line-height: 1.75;
   font-family: "DM Sans";
 }
-
-.read-more {
+.app__info-read-more {
   font-weight: 400;
   font-size: 18px;
   display: inline-block;
   margin-top: 12px;
   text-decoration: underline;
 }
-
-.faq {
+.app__faq {
   margin-top: 76px;
 }
-
-.faq h5 {
+.app__faq h5 {
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: 700;
   line-height: 1.75;
 }
-
-.faq-item {
-  background: #1a1a1a;
-  border-radius: 8px;
+.app__faq-accordion-item {
   margin-bottom: 10px;
-  overflow: hidden;
-}
-
-.faq-item.active .faq-answer {
-  display: block;
-}
-
-.faqAccordion {
-  height: 63px;
-}
-
-.accordion-item {
-  margin-bottom: 20px;
   background-color: transparent;
   border: 0;
+}
+
+.highlight {
+  color: #13ADB7;
+}
+
+.accordion-button {
+  height: 63px;
 }
 
 .accordion-collapse {
