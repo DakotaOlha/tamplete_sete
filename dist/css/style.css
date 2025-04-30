@@ -7,7 +7,6 @@
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-
 .header::before {
   content: "";
   position: absolute;
@@ -19,98 +18,73 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
-.header .container,
-.header__top,
-.header__content {
+.header__container, .header__top, .header__content {
   position: relative;
   z-index: 10;
 }
-
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding: 30px 100px;
 }
-
 .header__left {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-
 .header__left img {
   width: 20px;
 }
-
-.logo-text {
+.header__logo-text {
   font-size: 20px;
   font-weight: 600;
   color: white;
 }
-
-.logo-text .highlight {
-  color: #13ADB7;
-}
-
-.menu {
+.header__menu {
   display: flex;
   gap: 30px;
 }
-
-.menu__item a {
+.header__menu__item a {
   color: #fff;
   font-weight: 500;
   font-size: 16px;
 }
-
 .header__right {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .header__right a {
-  color: #13ADB7;
+  color: #fff;
   font-weight: 500;
-  margin-right: 15px;
+  font-size: 16px;
 }
-
-.phone-number {
-  color: white;
-}
-
 .header__content {
   margin-top: 160px;
   color: white;
   text-align: center;
 }
-
 .header__content h1 {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.3;
 }
-
-.header__content h1 .primary {
+.header__content-primary {
   color: #13ADB7;
 }
-
 .header__content-text {
   margin-top: 20px;
   font-size: 16px;
   color: #D9D9D9;
 }
-
 .header__buttons {
   margin-top: 35px;
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
-.btn {
+.header__buttons-btn-primary, .header__buttons-btn-outline {
   padding: 12px 28px;
   font-size: 16px;
   font-weight: 500;
@@ -119,26 +93,30 @@
   align-items: center;
   gap: 10px;
 }
-
-.btn-primary {
+.header__buttons-btn-primary {
   background-color: #13ADB7;
   color: white;
   border: none;
 }
-
-.btn-primary:hover {
+.header__buttons-btn-primary:hover {
   background-color: #108992;
 }
-
-.btn-outline {
+.header__buttons-btn-outline {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
-
-.btn-outline:hover {
+.header__buttons-btn-outline:hover {
   border: 2px solid #fff;
   color: #ffffff;
+}
+
+.highlight {
+  color: #13ADB7;
+}
+
+.phone-number {
+  color: white;
 }
 
 .footer {
