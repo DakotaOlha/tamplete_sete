@@ -176,23 +176,19 @@
   padding: 80px 185px;
   box-sizing: border-box;
 }
-
 .donate h2 {
   text-align: center;
   margin-bottom: 32px;
 }
-
 .donate h2 span {
   color: #13ADB7;
 }
-
-.donate__search-wrapper {
+.donate__search {
   display: flex;
   justify-content: center;
   margin: 0;
 }
-
-.donate__search {
+.donate__search-input {
   width: 100%;
   max-width: 800px;
   height: 64px;
@@ -203,17 +199,14 @@
   margin-bottom: 25px;
   transition: border-color 0.3s;
 }
-
-.donate__search::placeholder {
+.donate__search-input::placeholder {
   color: #9EA1B4;
   font-size: 18px;
 }
-
-.donate__search:focus {
+.donate__search-input:focus {
   outline: none;
   border-color: #13ADB7;
 }
-
 .donate__category {
   display: flex;
   flex-wrap: wrap;
@@ -221,7 +214,6 @@
   margin-bottom: 64px;
   justify-content: center;
 }
-
 .donate__category button {
   height: 38px;
   padding: 6px 16px;
@@ -233,80 +225,141 @@
   cursor: pointer;
   transition: all 0.2s;
 }
-
-.donate__category button:hover,
-.donate__category button.active {
+.donate__category button:hover, .donate__category button.active {
   background-color: #13ADB7;
   color: white;
 }
-
-.donate__card-list {
+.donate__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
 }
-
-.donate__card {
+.donate__cards-item {
   background-color: #fff;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.donate__card:hover {
+.donate__cards-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
-
-.donate__card img {
+.donate__cards img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
-
-.donate__card-content {
-  padding: 1.5rem;
+.donate__cards-content {
+  padding: 20px;
 }
-
-.donate__card-content h4 {
-  margin: 0.5rem 0;
+.donate__cards-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  margin-bottom: 5px;
+}
+.donate__cards-content-header p {
+  font-size: 0.95rem;
+  color: rgb(153, 156, 169);
+  margin-bottom: 0 !important;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+.donate__cards-content h4 {
+  margin-bottom: 8px;
   font-size: 1.25rem;
   color: #222;
 }
-
-.donate__card-content p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 1rem;
+.donate__cards-content p {
+  margin: 0;
+  margin-bottom: 20px;
 }
-
 .donate__count {
   display: block;
   font-weight: bold;
-  color: #13ADB7;
+  color: rgb(19, 173, 183);
   margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
 }
-
-.donate .btn {
+.donate__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.donate__button-btn-mark, .donate__button-btn-outline {
   padding: 0.6rem 1.2rem;
   border: none;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-}
-
-.donate .btn-outline {
   background-color: transparent;
   color: #13ADB7;
   border: 2px solid #13ADB7;
 }
-
-.donate .btn-outline:hover {
+.donate__button-btn-mark {
+  width: 20%;
+}
+.donate__button-btn-mark:hover {
   background-color: #13ADB7;
   color: #fff;
+}
+.donate__button-btn-outline {
+  width: 76%;
+}
+.donate__button-btn-outline:hover {
+  background-color: #13ADB7;
+  color: #fff;
+}
+.donate__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 38px;
+}
+.donate__pagination {
+  text-align: center;
+}
+.donate__pagination ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+.donate__pagination ul li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  align-content: center;
+  color: #13ADB7;
+  text-decoration: none;
+}
+.donate__pagination ul li.active a, .donate__pagination ul li a:hover {
+  background-color: #13ADB7;
+  color: #fff;
+  border: 1px solid #13ADB7;
+  border-radius: 50%;
+}
+.donate__see-all a {
+  color: #13ADB7;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.donate__see-all a:hover {
+  text-decoration: underline;
+}
+.donate__see-all a i {
+  padding-left: 5px;
 }
 
 @media (max-width: 1200px) {
