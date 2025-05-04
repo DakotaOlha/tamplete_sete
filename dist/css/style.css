@@ -124,7 +124,7 @@
   color: #fff;
   padding: 60px 0 20px;
 }
-.footer .footer__container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -132,41 +132,41 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-.footer .footer__column {
+.footer__column {
   flex: 1 1 200px;
 }
-.footer .footer__column h4.footer__title {
+.footer__column__title {
   font-weight: bold;
   margin-bottom: 34px;
 }
-.footer .footer__column ul {
+.footer__column ul {
   list-style: none;
   padding: 0;
 }
-.footer .footer__column ul li {
+.footer__column ul li {
   display: block;
   margin-bottom: 10px;
 }
-.footer .footer__column ul li a {
+.footer__column ul li a {
   color: #fff;
   text-decoration: none;
 }
-.footer .footer__column ul li a:hover {
+.footer__column ul li a:hover {
   text-decoration: underline;
 }
-.footer .footer__column p {
+.footer__column p {
   margin: 0;
   line-height: 1.6;
 }
-.footer .footer__column:last-child {
+.footer__column p.copy__right {
+  margin-top: auto; /* "Приклеює" copyright донизу */
+  margin-bottom: 10px;
+}
+.footer__column:last-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Розподіляє простір між елементами */
   text-align: right;
-}
-.footer p.copy__right {
-  margin-top: auto; /* "Приклеює" copyright донизу */
-  margin-bottom: 10px;
 }
 
 .donate {
