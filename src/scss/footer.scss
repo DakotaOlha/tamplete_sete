@@ -2,6 +2,14 @@
     background-color: #000;
     color: #fff;
     padding: 60px 0 20px;
+
+    @media (max-width: 1024px) {
+      padding: 50px 0 20px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 40px 0 20px;
+    }
   
     &__container {
       display: flex;
@@ -10,14 +18,30 @@
       margin: 0 auto;
       flex-wrap: wrap;
       gap: 30px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 40px;
+      }
     }
   
     &__column {
       flex: 1 1 200px;
+
+      @media (max-width: 768px) {
+        flex: 1 1 100%;
+        min-width: 100%;
+      }
+
   
       &__title {
         font-weight: bold;
         margin-bottom: 34px;
+
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+          font-size: 16px;
+         }
       }
   
       ul {
@@ -27,10 +51,18 @@
         li {
           display: block;
           margin-bottom: 10px;
+
+          @media (max-width: 768px) {
+            margin-bottom: 8px;
+          }
   
           a {
             color: #fff;
             text-decoration: none;
+
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
   
             &:hover {
               text-decoration: underline;
@@ -43,17 +75,32 @@
         margin: 0;
         line-height: 1.6;
 
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+
         &.copy__right {
-          margin-top: auto; /* "Приклеює" copyright донизу */
+          margin-top: auto;
           margin-bottom: 10px;
+
+          @media (max-width: 768px) {
+            margin-top: 30px;
+            text-align: center;
+          }
         }
       }
 
       &:last-child {
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* Розподіляє простір між елементами */
+        justify-content: space-between; 
         text-align: right;
+
+        @media (max-width: 768px) {
+          text-align: left;
+          flex-direction: column-reverse;
+          gap: 30px;
+        }
       }
     }
   }

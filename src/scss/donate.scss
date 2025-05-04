@@ -227,53 +227,57 @@
 @media (max-width: 1200px) {
   .donate {
     padding: 60px 100px;
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
-  .donate__card-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 768px) {
   .donate {
     padding: 50px 40px;
-  }
 
-  .donate__search {
-    font-size: 15px;
-    height: 56px;
-  }
+    &__search {
+      font-size: 15px;
+      height: 56px;
+    }
 
-  .donate__category {
-    justify-content: flex-start;
+    &__category {
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .donate {
     padding: 40px 20px;
+
+    &__search {
+      font-size: 14px;
+      height: 48px;
+      padding: 10px 14px;
+    }
+
+    &__category {
+      gap: 8px;
+      margin-top: 35px;
+    }
+
+    &__cards {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+
+      &-content h4 {
+        font-size: 1.1rem;
+      }
+
+      &-content p {
+        font-size: 0.9rem;
+      }
+    }
   }
 
-  .donate__search {
-    font-size: 14px;
-    height: 48px;
-    padding: 10px 14px;
-  }
-
-  .donate__category {
-    gap: 8px;
-  }
-
-  .donate__card-list {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .donate__card-content h4 {
-    font-size: 1.1rem;
-  }
-
-  .donate__card-content p {
-    font-size: 0.9rem;
-  }
 }
