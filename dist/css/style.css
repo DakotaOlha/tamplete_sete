@@ -608,7 +608,7 @@
   margin-left: 45px;
 }
 
-.partners-section {
+.partners {
   display: flex;
   color: #fff;
   text-align: center;
@@ -616,14 +616,12 @@
   justify-content: center;
   box-sizing: border-box;
 }
-
-.partners-container {
+.partners__container {
   max-width: 1100px;
   margin: 0;
   width: 100%;
 }
-
-.small-title {
+.partners-small-title {
   text-align: left;
   font-size: 14px;
   font-weight: 500;
@@ -632,8 +630,7 @@
   letter-spacing: 1px;
   margin-bottom: 12px;
 }
-
-.main-title {
+.partners-main-title {
   color: rgb(15, 17, 29);
   text-align: left;
   font-size: 32px;
@@ -641,20 +638,14 @@
   margin-bottom: 84px;
   line-height: 1.4;
 }
-
-.highlight {
-  color: #13ADB7;
-}
-
-.partners-logos {
+.partners__logos {
   display: grid;
   grid-template-columns: repeat(5, 210px);
   grid-auto-rows: 94px;
   gap: 12px;
   justify-content: center;
 }
-
-.logo-card {
+.partners__logos-card {
   width: 210px;
   height: 94px;
   background: #fff;
@@ -666,19 +657,16 @@
   transition: transform 0.3s, box-shadow 0.3s;
   box-sizing: border-box;
 }
-
-.logo-card img {
+.partners__logos-card img {
   max-width: 100%;
   max-height: 60px;
   object-fit: contain;
 }
-
-.logo-card:hover {
+.partners__logos-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
 }
-
-.logo-card.more-text {
+.partners__logos-card.more-text {
   width: 160px;
   grid-row: span 2;
   font-size: 16px;
@@ -689,6 +677,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.highlight {
+  color: #13ADB7;
 }
 
 /* ========== MEDIA QUERIES ========== */
